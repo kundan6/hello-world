@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en-US" class="no-js csstransforms csstransforms3d csstransitions gr__ajwebify_me"><head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content=" initial-scale=1.0, user-scalable=no">
@@ -6,7 +6,7 @@
 	<meta name="author" content="Kundan">
 	 <meta name="keywords" content="web design, design, website, development, flashmantra, daatos, psd to HTML, front end development, HTML, CSS, web designer, web developer">
 	
-	<title>Kundan | UI Developer/UX Designer</title>
+	<title>Kundan Gupta</title>
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="images/photo2.jpg">
 	<link rel="apple-touch-icon" href="images/photo2.jpg" sizes="57x57">
@@ -50,10 +50,6 @@
 	  margin-top: 50px;
 	}
 	
-	.jumbotron {
-	  background:#41b0bf;
-	 
-	}
 	
 	.disclaimer {
 	  display: block;
@@ -82,33 +78,87 @@
 	  margin-top: 50px;
   }
   
-  
-.cusortext {
-  width: 18ch;
-  font-size: 4.5rem;
-  font-weight: 400; 
-  margin: auto;
-  white-space: nowrap;
+ 
+div.jumbotron {
+	opacity: 0.8;
   overflow: hidden;
-  border-right: 4px solid black;
-  animation: cursor 1s step-start infinite, text 3s steps(18);
+  z-index: 10;
+  /* background-image: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); */
+  background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(18,57,71,1) 100%);
+	background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes cursor {
-  0%, 100% {
-    border-color: black;
+h1.name {
+  font-family: 'Righteous', cursive;
+  background: url("https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif") center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7rem;
+  letter-spacing: 10px;
+  background-size: cover;
+  margin: 0px;
+  color: transparent;
+}
+
+p.role {
+  font-family: 'Caveat', cursive;
+  color: transparent;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin: 0px;
+  background: #fff;
+  -webkit-background-clip: text;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 200px;
+  left: 0;
+  background-image: url('http://tobiasbogliolo.com/docs/codepen/assets/img/wave.png');
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+  background-repeat: repeat no-repeat;
+  background-size: 50% 120px;
+}
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1)
   }
   50% {
-    border-color: transparent;
-  }
-}
-@keyframes text {
-  0% {
-    width: 0;
+    transform: translateX(-25%) translateZ(0) scaleY(0.55)
   }
   100% {
-    width: 18ch;
+    transform: translateX(-50%) translateZ(0) scaleY(1)
   }
+}
+
+.wave:nth-child(1) {
+  animation: wave 10s linear infinite;
+}
+.box {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: -1px;
+  opacity: 0.75;
+  overflow: hidden;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.wave:nth-child(2) {
+  animation: wave 20s linear infinite;
+}
+
+.wave:nth-child(3) {
+  animation: wave 30s linear infinite;
 }
 
 	</style>
@@ -167,43 +217,26 @@
 	
 	<!-- Home Section -->
 	<section id="home">
-	
-	
 			<!-- jumbotron -->
-	<div id="about" class="jumbotron jumbotron-fluid bg-dark text-white">
-		<div class="container text-center">
-		  <img class="profile-image animated pulse" src="images/photo2.jpg" style="height: 100px;width: 100px;" alt=" kundan">
-		  <h1> Kundan Gupta</h1>
-		  <h2 class="cusortext"> UI Developer  </h2>
+	<div  class="jumbotron text-center  text-white">
+		
+		  <h1 class="name"> Kundan Gupta</h1>
+		  <p class="role"> UI Developer  </p>
 		  <hr class="my-2">
-		  <p>A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript/ Angular / Reactjs / Nodejs  and some other cool libraries and frameworks.</p>
+		  <p class="container">A passionate UI Developer 🚀 having an experience of building Web and Mobile applications with JavaScript/ Angular / Reactjs / Nodejs  and some other cool libraries and frameworks.</p>
 			  
-
-		</div>
+		  <div class="box">
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+		  </div>
+		
 	  </div>
-	  <!-- /jumbotron -->
 	  
-	  
-		<!-- END REVOLUTION SLIDER -->
-	
-	<!--div class="slide-content">
-		<div class="text-center">
-			<div class="header">
-				<div class="heading">
-					Welcome to my site
-				</div>
-				<div class="box-heading">
-					<div class="box-inner">
-						Jonathan Doe
-					</div>
-				</div>
-			</div>
-		</div>
-	</div-->
 	</section>
 	<!-- Home Section -->
 	<!-- About Section -->
-	<section class="section-content bg1">
+	<section class="section-content bg1" id="about">
 	<div class="container">
 		<div class="row">
 			<!-- Section Title -->
@@ -211,7 +244,7 @@
 				<div>
 					<span class="fa fa-user fa-2x"></span>
 				</div>
-				<h1 id="about">About <span>Me</span></h1>
+				<h1 >About <span>Me</span></h1>
 			</div>
 			<!-- End Section Title -->
 		</div>
@@ -219,12 +252,7 @@
 			<div class="col-md-4 text-center item_bottom" style="opacity: 1; bottom: 0px;"> 
 				 <img src="images/photo.jpg" class="img-center img-responsive" alt="My photo"> 
 				<!-- YOUR PHOTO -->
-				 <div class="name-title"> 
-					 <h2>Kundan Kumar</h2>
-					<!-- Your Name -->
-					 <h5>[  UI Developer ]</h5> 
-					<!-- Your Designation -->
-				 </div>
+				
 			</div>
 		<!-- some text about yourself -->
 			<div class="col-md-4 item_top" style="opacity: 1; top: 0px;">
@@ -234,16 +262,14 @@
 				<p>
 					Hello,I am <strong>Kundan Kumar</strong>, a  software engineer based in India.
 	
-	I fell in love with technology when I build my first website with HTML and CSS at the age of 18 and hosted it on wapka.mobi ! Since then I've been passionate about building applications that solve real world problems by applying new and exciting technologies.
-	
-	My latest experience has been focused on building single-page applications with JavaScript, Angular 2,,Bootstrap 3 HTML/CSS, jQuery, Node.js .
+			I fell in love with technology when I build my first website with HTML and CSS at the age of 18 and hosted it on wapka.mobi ! Since then I've been passionate about building applications that solve real world problems by applying new and exciting technologies.
+			
+			My latest experience has been focused on building single-page applications with JavaScript, Angular ,Bootstrap 4 HTML/CSS, jQuery, Node.js .
 				</p>
 				<p>
-					 I am currently working in <strong>Teletext India Pvt Ltd</strong> Hyderabad , where I spend most of my time crafting and working on awesome projects. Taking Knowlege From Experts Mentor
+					 I am currently working in <strong>Optival Health Solutions Pvt Ltd</strong> Hyderabad , where I spend most of my time crafting and working on awesome projects. Taking Knowlege From Experts Mentor
 				</p>
-		  <!-- <p class="text-center">
-		  <img src="images/sign.png" width="200" alt="signature">
-		  </p> -->
+		 
 			</div>
 		<!-- ./some text about yourself -->
 			<div class="col-md-4 item_bottom" style="opacity: 1; bottom: 0px;">
@@ -261,7 +287,7 @@
 					
 					<div class="counters-item">
 						<i class="fa fa-flag fa-2x"></i>
-						<strong data-to="25">25</strong>
+						<strong data-to="25">40</strong>
 						<!-- Set Your Number here. i,e. data-to="56" -->
 						<p>
 							Month Experience
@@ -869,7 +895,7 @@
 	<!-- Footer Text -->
 		<div class="container text-center item_top" style="opacity: 1; top: 0px;">
 		<img class="footer-logo" src="images/logo.png" alt="footer logo"><br> 
-			© Copyright 2017-18. All Rights Reserved.
+			© Copyright 2017-20. All Rights Reserved.
 		</div>
 	<!-- End Footer Text -->
 	</footer>
@@ -916,3 +942,4 @@
 	
 	
 	<div style="clear: both;"></div></body></html>
+
