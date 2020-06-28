@@ -13,7 +13,9 @@
 	<link rel="apple-touch-icon" href="images/photo2.jpg" sizes="72x72">
 	<link rel="apple-touch-icon" href="images/photo2.jpg" sizes="114x114">
 	<link rel="apple-touch-icon" href="images/photo2.jpg" sizes="144x144">
-	<!-- List of Stylesheet -->
+  <!-- List of Stylesheet -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 	<link type="text/css" href="css/normalize.css" rel="stylesheet">
 	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
@@ -49,19 +51,66 @@
 	}
 	
 	.jumbotron {
-	  background-image: url('https://www.dl.dropboxusercontent.com/s/i1x809udcl2d7z1/1500x500.jpg');
-	  background-size: cover;
-	  opacity: 0.95;
-	  filter: grayscale(85%);
+	  background:#41b0bf;
+	 
 	}
 	
 	.disclaimer {
 	  display: block;
 	  margin-top: 10px;
 	}
+
+  .grey-color {
+    color: #868e96;
+  }
+   .logo {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+.logo-name {
+  font-family: 'Yellowtail', cursive;
+    font-weight: 700;
+    padding: 0 10px;
+    color:#fff;
+}
 	.footer {
 	  margin-top: 50px;
-	}
+  }
+  
+  
+.cusortext {
+  width: 18ch;
+  font-size: 4.5rem;
+  font-weight: 400; 
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid black;
+  animation: cursor 1s step-start infinite, text 3s steps(18);
+}
+
+@keyframes cursor {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 18ch;
+  }
+}
+
 	</style>
 	</head>
 	<body data-gr-c-s-loaded="true">
@@ -80,7 +129,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" style="height: 60px;width: 150px;" alt=""></a>
+      <!-- 	<a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" style="height: 60px;width: 150px;" alt=""></a> -->
+      <a href="" class="logo"><span class="grey-color"> &lt;</span><span class="logo-name">Kundan Gupta</span><span class="grey-color">/&gt;</span></a>
 			</div>
 			<nav id="my-nav" class="navbar-collapse collapse" role="navigation">
 			<ul class="nav navbar-nav">
@@ -123,12 +173,12 @@
 	<div id="about" class="jumbotron jumbotron-fluid bg-dark text-white">
 		<div class="container text-center">
 		  <img class="profile-image animated pulse" src="images/photo2.jpg" style="height: 100px;width: 100px;" alt=" kundan">
-		  <h1>Hi, I'm Kundan</h1>
-		  <p class="lead">I am a UI Developer /UX Designer/ Ionic Developer </p>
+		  <h1> Kundan Gupta</h1>
+		  <h2 class="cusortext"> UI Developer  </h2>
 		  <hr class="my-2">
-		  <p>I am a UI developer with a passion for human-machine interactions. I have worked on various projects as the UX lead and/or as an interaction designer during the course of my study. I love human-computer interaction and I believe in solving real-life problems through the application of an intuitive and a practical approach to interface design.</p>
+		  <p>A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript/ Angular / Reactjs / Nodejs  and some other cool libraries and frameworks.</p>
 			  
-			  <p>I have also conducted usability testing and have done extensive research work on the same &mdash; both as part of my coursework, as well as independently.</p>
+
 		</div>
 	  </div>
 	  <!-- /jumbotron -->
@@ -302,7 +352,7 @@
 	
 				<article class="design photo isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
 				<a href="#">
-				<img src="images/portfolio/thumb4.PNG" alt="image">
+				<img src="images/portfolio/thumb4.png" alt="image">
 				<div class="overlay">
 					<div class="item-info">
 						<i class="fa fa-camera"></i>
@@ -340,7 +390,7 @@
 				</article>
 				<article class="design photo isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(876px, 0px, 0px);">
 				<a href="#">
-				<img src="images/portfolio/thumb1.PNG" alt="image">
+				<img src="images/portfolio/thumb1.png" alt="image">
 				<div class="overlay">
 					<div class="item-info">
 						<i class="fa fa-camera"></i>
@@ -776,10 +826,7 @@
 				<!-- End Contact Details -->
 				<!-- Social Icon -->
 				<div class="social-icon">
-					<a href="https://m.facebook.com/kundan4"><i class="fa fa-facebook-square fa-2x"></i></a>
-					<!-- <a href="https://twitter.com/AjayGaurkhede"><i class="fa fa-twitter-square fa-2x"></i></a>
-					<a href="https://plus.google.com/104713708475662540576"><i class="fa fa-google-plus-square fa-2x"></i></a>
-					<a href="https://www.youtube.com/user/ajayhacks"><i class="fa fa-youtube-square fa-2x"></i></a> -->
+					<a href="https://m.facebook.com/kundan4"><i class="fa fa-facebook-square fa-2x"></i></a>				
 					<a href="https://www.linkedin.com/in/kundan-gupta-76797024/"><i class="fa fa-linkedin-square fa-2x"></i></a>
 				
 				</div>
