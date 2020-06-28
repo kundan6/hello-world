@@ -6,6 +6,7 @@ Author: TheThemeLab
 Author URI: http://themeforest.net/user/thethemelab
 */
 @import url("https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap");
+
 /* ##### GENERAL CLASS ##### */
 *, *:after, *::before {
 	-webkit-box-sizing: border-box;
@@ -350,13 +351,7 @@ line-height: 1.6;
 	color: #fff;
   overflow: hidden;
 }
-#home h1 {
-    margin: 10px 0;
-    font-family: 'Sacramento',cursive !important;
-	color: #fff;
-  letter-spacing: -4px;
-	text-transform: uppercase;
-}
+
 #home h4 {
 	margin: 0px;
 	color: #ffffff;
@@ -1114,11 +1109,10 @@ padding-bottom:40px;
 /* ##### FOOTER ##### */
 footer {
 	font-size: 14px;
-	padding: 60px 0px;
   margin:0px;
 	text-align: center;
-	color: #ffffff;
-  background: rgba(0,0,0,0.8);
+	color: #000;
+ 
 }
 .footer-logo{
 margin-bottom:30px;
